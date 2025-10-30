@@ -1,4 +1,4 @@
-## MON RECUEIL DE TEMOIGNAGE EN HTML5 CSS3 ET JAVASCRIPT
+## MON RECUEIL DE TEMOIGNAGE EN HTML5 CSS3 ET JAVASCRIPT 🗨
 
 ![Design preview for the project](./img/preview.png)
 
