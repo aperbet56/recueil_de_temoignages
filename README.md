@@ -1,5 +1,7 @@
 ## MON RECUEIL DE TEMOIGNAGE EN HTML5 CSS3 ET JAVASCRIPT
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Création d'un carrousel (en lecture automatique) recensant différents témoignages. Une barre de progression indique le passage progressif vers un autre témoignage.
