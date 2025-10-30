@@ -1,3 +1,5 @@
+/**** Importation de la police Montserrat ****/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /**** Reset ****/
@@ -8,7 +10,7 @@
     box-sizing: border-box;
 }
 
-/**** Style général de la page ****/
+/**** body ****/
 
 body {
     width: 100%;
@@ -17,31 +19,42 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
+    color: #1f1235;
     font-family: "Montserrat", sans-serif;
 }
 
-header {
+/**** header et footer ****/
+
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 35px 15px;
 }
 
+/**** header ****/
+
 h1 {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
+    margin: 0;
 }
+
+/**** main ****/
 
 .main__content {
     flex-grow: 1;
 }
 
+/**** section ****/
+
 .testimonial__container {
     max-width: 768px;
-    background-color: #416cfc;
-    color: #ffffff;
+    background-color: #301e4e;
+    color: #f4f0fc;
     border-radius: 15px;
     margin: 20px auto;
     padding: 50px 80px;
@@ -51,18 +64,19 @@ h1 {
 .progress-bar {
     width: 100%;
     height: 4px;
-    background-color: #ffffff;
+    background-color: #ff6e6c;
     transform-origin: left;
     margin-bottom: 12px;
     animation: grow 10s linear infinite;
 }
-  
+
 /**** Animation grow ****/
 
 @keyframes grow {
     0% {
         transform: scaleX(0);
     }
+
     100% {
         transform: scaleX(1);
     }
@@ -71,14 +85,14 @@ h1 {
 .fa-quote {
     position: absolute;
     top: 60px;
-    color: rgba(255, 255, 255, 0.404);
+    color: #ffffff;
     font-size: 36px;
 }
-  
+
 .fa-quote-right {
     left: 40px;
 }
-  
+
 .fa-quote-left {
     right: 40px;
 }
@@ -87,51 +101,46 @@ h1 {
     line-height: 1.8;
     text-align: justify;
 }
-  
+
 .user {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 25px;
 }
-  
+
 .user__img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
-  
+
 .user-details {
     margin-left: 12px;
 }
-  
+
 .role {
     font-weight: normal;
     margin: 6px 0;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 35px 15px;
-}
+/**** footer ****/
 
 footer span {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
-  
-/**** Responsive design ****/
+
+/**** Responsive design version tablette ****/
 
 @media (max-width: 800px) {
     .testimonial__container {
         margin: 20px 30px;
         padding: 50px;
     }
-  
+
     .fa-quote {
         display: none;
     }
@@ -140,7 +149,9 @@ footer span {
         text-align: center;
     }
 }
-  
+
+/**** Responsive design version mobile ****/
+
 @media screen and (max-width: 462px) {
     .user {
         flex-direction: column;
